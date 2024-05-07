@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  margin:0;  
+
+}
+
+.articles::-webkit-scrollbar {
+  display: none;
+}
+
+.articles {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+article {
+  height: 100vh;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  scroll-snap-align: start;
+
+ 
+}
+
+
+.navbar{
+  position: relative;
+  font-family: "Catamaran", sans-serif;
+  
+;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2vw;
+  height: 8vh;
+  font-size: 1.5vw;
+
+}
+.nav-item{
+  color: rgb(78, 78, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5vw;
+  
+}
+.logo{
+  height: 8vh;
+  margin-left: 1vw;
+
+
+}
+.nav-logo{
+  position: absolute;
+ top: 0;
+ left: 50%;
+
+
+
+
+  font-family: "Catamaran", sans-serif;
+  color: #5847B9;
+  font-weight: 600;
+  font-size: 2.6vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.home-button{
+  color: #5847B9;
+  font-weight: 600;
+}
+.pic1-contaier{
+  background-color: #cdc8ea;
+  height: 65vh;
+}
+.container1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container1-title{
+  width: 40vw;
+  font-size: 4vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+
+
+}
+.container1-title p{
+  margin: 0;
+  padding: 0;
+
+}
+.container1-content{
+
+  color: #565D6DFF;
+  font-family: "Catamaran", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+
+}
+.container1-content p{
+  margin: 0;
+  padding: 0;
+}
+.buttons{
+display: flex;
+gap: 1vw;
+justify-content: center;
+align-items: center;
+}
+button:hover{
+  cursor: pointer;
+  scale: 1.1;
+}
+.but1{
+  background-color: #5847B9;
+  color: white;
+width: 10vw;
+height: 8vh;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.but2{
+  background-color: white;
+  color: #5847B9;
+width: 10vw;
+height: 8vh;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  border: 1px solid #5847B9;
+}
+article.article-2 {
+  padding: 10vh 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2vw;
+}
+
+.title2{
+  font-size: 3vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+.container2-content{
+  color: #565D6DFF;
+  font-family: "Catamaran", sans-serif;
+  display: flex;
+  flex-direction: column;
+ 
+}
+.container2-img{
+  width: 40vw;
+  height: 60vh;
+
+  background-color: #cdc8ea;
+}
+.container3{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15vh 15vw;
+  gap: 5vh;
+}
+
+.container3-part1{
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container3-title{
+  font-size: 3vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+  width: 50vw;
+
+
+}
+.container3-content{
+  color: #565D6DFF;
+  font-family: "Catamaran", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  width: 40vw;
+}
+.container3-part2{
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 5vw;
+
+}
+.container3-element{
+
+width: 27vw;
+
+
+}
+.element-img img{
+  width: 3vw;
+  margin-bottom: 2vh;
+}
+.element-title{
+  font-size: 2vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+.element-content{
+  color: #565D6DFF;
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.2vw;
+}
+.element-button{
+  color: #5847B9;
+  font-family: "Catamaran", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  cursor: pointer;
+
+
+}
+.element-button span{
+font-size: 1.6vw;
+}
+.container4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+padding: 20vh 5vw;
+}
+.container4-part1{
+display: flex;
+flex-direction: column;
+gap: 3vh;
+}
+.container4-img{
+  width: 55vw;
+  height: 50vh;
+  background-color: #cdc8ea;
+}
+.article-5{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 5vw;
+}
+.slide1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Catamaran", sans-serif;
+  width: 90vw;
+  padding: 10vh 0;
+
+}
+.slide-content{
+  
+  font-size: 1.5vw;
+  font-weight: 600;
+  width: 42vw;
+  text-align: center;
+  margin-bottom: 8vh;
+
+}
+.slide1-img{
+  width: 5vw;
+  height: 5vw;
+  background: #cdc8ea;
+  border-radius: 50%;
+  margin-bottom: 2vh;
+  
+}
+.slide1-name{
+  font-size: 1.2vw;
+  font-weight: 400;
+  color: #565D6DFF;
+  text-align: center;
+}
+.slide1-position{
+  font-size: 1vw;
+  font-weight: 400;
+  color: #565D6DFF;
+  text-align: center;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.container6{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  padding: 6vh 5vw;
+}
+.container6-content{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+.container6-title{
+  font-size: 3vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+.container6-subtitle{
+  font-size: 1.2vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  color: #171A1FFF;
+}
+.content-item{
+  user-select: none;
+}
+.content-item-title{
+  font-size: 1.3vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+
+}
+.arrow{
+  position: absolute;
+  right: 2vw;
+  top: 0;
+  transform: translatex(-50%);
+  transform: rotate(45deg);transition: all 0.3s ease ;
+}
+.down{
+  transform: rotate(45deg);
+
+}
+.right{
+  transform: rotate(-45deg);
+}
+.content-item-content{
+  font-size: 1.1vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  color: #171A1FFF;
+}
+.container7{
+
+  padding: 1vh 5vw 0 5vw;
+
+}
+.container7-title{
+  font-size: 3vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+.container7-subtitle{
+  font-size: 1.2vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  color: #171A1FFF;
+
+}
+.container7-content{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2vw;
+  padding: 2vh 0;
+}
+.container7-content .content-item{
+
+  width: 40vw;
+  height: 50vh;
+
+}
+.content-item-img{
+  width: 40vw;
+  height: 35vh;
+  background-color: #cdc8ea;
+  border-radius: 3px;
+}
+.content-item-name{
+  font-size: 1.5vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+  color: #171A1FFF;
+
+}
+.content-item-position{
+  font-size: 1.2vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  color: #171A1FFF;
+
+}
+.content-item-description{
+  font-size: 1.1vw;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+  color: #565D6DFF;
+}
+.content-item-socials{
+  display: flex;
+  gap: 1vw;
+}
+.socials-icon img{
+  width: 2vw;
+  height: 2vw;
+}
+.footer{
+
+padding-top: 5vh;
+display: flex;
+flex-direction: column;
+padding: 0 vw;
+gap: 1vh;
+font-family: "Catamaran", sans-serif;
+
+}
+.footer-part1{
+  display: flex;
+  justify-content: space-between;
+
+  gap: 2vw;
+}
+.footer-address{
+  display: flex;
+  gap: 1vh;
+}
+.footer-content{
+  display: flex;
+
+}
+.footer-line{
+
+  height: 2px;
+  margin: 0 4vw;
+  background-color: #5847B9FF;
+
+}
+.footer-logo img{
+  width: 9vw;
+  margin-right: 1vw;
+  margin-top: 1vh;
+}
+.footer-socials{
+  display: flex;
+  gap: 1vw;
+}
+.footer-socials img{
+  width: 1.5vw;
+  height: 1.5vw;
+}
+.footer-part2{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copyrights{
+  color: #5847B9FF;
+}
+.footer-terms{
+  display: flex;
+  gap: 1vw;
+}
+.footer-links{
+  color: #565D6DFF;
+  font-size: 1.2vw;
+  font-weight: 400;
+ display: flex;
+  gap: 1vw;
+  margin-top: 5vh;
+
+}
