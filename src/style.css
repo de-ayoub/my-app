@@ -42,20 +42,21 @@ article {
 .navbar{
   position: relative;
   font-family: "Catamaran", sans-serif;
-  
-;
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 2vw;
   height: 8vh;
   font-size: 1.5vw;
+  padding: 0;
+  margin: 0;
+
 
 }
 .nav-item{
   color: rgb(78, 78, 78);
   display: flex;
-  justify-content: center;
+  justify-content: centerz;
   align-items: center;
   gap: .5vw;
   
@@ -79,15 +80,32 @@ article {
   font-weight: 600;
   font-size: 2.6vw;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 
 }
 
 .home-button{
   color: #5847B9;
   font-weight: 600;
+}
+@media screen and (max-width:800px){
+  .logo{
+    height: 8vh;
+    padding-right:1vh ;
+  }
+  .nav-logo{
+    left: 84%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 2vh;
+  }
+  .nav-item{
+    font-size: 1.5vh;
+    font-weight: 500;
+  }
+
+
+
 }
 .pic1-contaier{
   background-color: #cdc8ea;
@@ -162,6 +180,36 @@ height: 8vh;
   border-radius: 2px;
   border: 1px solid #5847B9;
 }
+@media screen and (max-width:800px){
+  .pic1-contaier{
+    height: 50vh;
+  }
+  .container1{
+    flex-direction: column;
+  }
+  .container1-title{
+    width: 100vw;
+    font-size: 4vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container1-content{
+  width: 100vw;
+  font-size: 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.but1,.but2{
+  width: 25vw;
+height: 6vh;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+  font-size: 1.5vh;
+}
+}
 article.article-2 {
   padding: 10vh 6vw;
   display: flex;
@@ -192,6 +240,19 @@ article.article-2 {
   height: 60vh;
 
   background-color: #cdc8ea;
+}
+@media screen and (max-width:800px){
+  .container2{
+    flex-direction: column;
+  }
+  .title2{
+    font-size: 3.2vh;
+  }
+  .container2-img{
+    width: 80vw;
+    height: 50vh;
+  }
+
 }
 .container3{
   
@@ -264,6 +325,50 @@ width: 27vw;
 .element-button span{
 font-size: 1.6vw;
 }
+@media screen and (max-width:800px){
+  .container3{
+    padding: 0;
+    width: 100vw;
+  }
+  .container3-title{
+    font-size: 3vh;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    padding-left: 1vh;
+  }
+  .container3-content{
+    gap: 1vw;
+    width: 90vw;
+  }
+  .container3-part1{
+    flex-direction: column;
+  }
+  .container3-part2{
+    flex-direction: column;
+  }
+  .container3-element{
+    width: 90vw;
+    }
+  .element-img img{
+    width: 3vh;
+    margin-bottom: 2vh;
+  }
+  .element-title{
+    font-size: 2vh;
+  }
+  .element-content{
+    font-size: 1.2vh;
+  }
+  .element-button{
+    font-size: 1.2vh;
+  }
+  .element-button span{
+  font-size: 1.6vh;
+  }
+}
 .container4{
   display: flex;
   justify-content: center;
@@ -280,6 +385,17 @@ gap: 3vh;
   width: 55vw;
   height: 50vh;
   background-color: #cdc8ea;
+}
+@media screen and (max-width:800px){
+  .container4{
+    flex-direction: column;
+    padding: 10vh 10vw;
+  }
+  .container4-img{
+    width: 90vw;
+    height: 60vh;
+  }
+
 }
 .article-5{
   display: flex;
@@ -337,6 +453,22 @@ gap: 3vh;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+@media screen and (max-width:800px){
+  .slide-content{
+    font-size: 1.5vh;
+    width: 60vw;
+  }
+  .slide1-img{
+    width: 7vh;
+    height: 7vh;
+  }
+  .slide1-name{
+    font-size: 1.2vh;
+  }
+  .slide1-position{
+    font-size: 1vh;
+  } 
+}
 .container6{
   display: flex;
   flex-direction: column;
@@ -393,6 +525,42 @@ gap: 3vh;
   font-weight: 400;
   color: #171A1FFF;
 }
+@media screen and (max-width:800px){
+  .container6-content{
+    width: 80vw;
+  }
+  .container6-title{
+    font-size: 3vh;
+    padding: 5vh 0;
+  }
+  .container6-subtitle{
+    font-size: 1.5vh;
+  }
+  .content-item-title{
+    font-size: 1.5vh;
+  }
+  .arrow{
+    position: absolute;
+    right: 0vh;
+    top: 0;
+    transform: translatex(-50%);
+    transform: rotate(45deg);transition: all 0.3s ease ;
+  }
+  .down{
+    transform: rotate(45deg);
+  
+  }
+  .right{
+    transform: rotate(-45deg);
+  }
+  .content-item-content{
+    font-size: 1.1vh;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    color: #171A1FFF;
+  }
+}
+
 .container7{
 
   padding: 1vh 5vw 0 5vw;
@@ -458,6 +626,59 @@ gap: 3vh;
   width: 2vw;
   height: 2vw;
 }
+@media screen and (max-width:800px){
+  .container7{
+    padding: 10vh 5vw 0 2vw;
+    height: 100vh;
+  }
+  .container7-title{
+    font-size: 3vh;
+  }
+  .container7-subtitle{
+    font-size: 1.5vh;
+  
+  }
+  .container7-content .content-item{
+  
+    width: 40vw;
+    height: 45vh;
+  
+  }
+  .content-item-img{
+    width: 40vw;
+    height: 20vh;
+    background-color: #cdc8ea;
+    border-radius: 3px;
+  }
+  .content-item-name{
+    font-size: 2vh;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 600;
+    color: #171A1FFF;
+  
+  }
+  .content-item-position{
+    font-size: 1.2vh;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    color: #171A1FFF;
+  
+  }
+  .content-item-description{
+    font-size: 1.1vh;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    color: #565D6DFF;
+  }
+  .content-item-socials{
+    display: flex;
+    gap: 1vw;
+  }
+  .socials-icon img{
+    width: 2vh;
+    height: 2vh;
+  }
+}
 .footer{
 
 padding-top: 5vh;
@@ -521,4 +742,64 @@ font-family: "Catamaran", sans-serif;
   gap: 1vw;
   margin-top: 5vh;
 
+}
+@media screen and (max-width:800px){
+  .footer{
+
+    flex-direction: column;
+    padding: 0;
+    
+    }
+    .footer-part1{
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    
+    }
+    .footer-address{
+      display: flex;
+      gap: 1vh;
+    }
+    .footer-content{
+      display: flex;
+    
+    }
+    .footer-line{
+    
+      height: 2px;
+      margin: 0 4vh;
+      background-color: #5847B9FF;
+    
+    }
+    .footer-logo img{
+      width: 9vh;
+    }
+    .footer-socials{
+      display: flex;
+      gap: 1.5vw;
+    }
+    .footer-socials img{
+      width: 2vh;
+      height: 2vh;
+    }
+    .footer-part2{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .footer-copyrights{
+      color: #5847B9FF;
+    }
+    .footer-terms{
+      display: flex;
+      gap: 3vh;
+    }
+    .footer-links{
+      color: #565D6DFF;
+      font-size: 1.7vh;
+      font-weight: 400;
+     display: flex;
+      gap: 1vw;
+    
+    }
 }
